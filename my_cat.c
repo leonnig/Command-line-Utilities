@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     if (argc < 2) {
-        printf("用法: %s <檔名>\n", argv[0]);
+        printf("Usage: %s <file name>\n", argv[0]);
         return 1;
     }
 
@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
                 break;
             }
         }
-        
+
         if (bytes_read == -1) {
-            perror("read 錯誤");
+            perror("read error");
         }
         close(fd);
     }
